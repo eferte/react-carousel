@@ -1,0 +1,53 @@
+.ScrollButtons {
+  position: relative;
+  z-index: 4;
+}
+
+.PreviousButton,
+.NextButton {
+  align-items: center;
+  background-color: rgb(179, 179, 179);
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  filter: drop-shadow(0px 3px 4px rgba(199, 196, 196, 0.55));
+  height: 33px;
+  justify-content: center;
+  position: absolute;
+  width: 33px;
+  margin-top: 10px;
+}
+
+.PreviousButtonDisabled {
+  display: none;
+}
+.PreviousButton {
+  left: -30px;
+}
+.NextButton {
+  right: -15px;
+}
+
+.NextButtonDisabled {
+  display: none;
+}
+
+.BorderLeft,
+.BorderRight {
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+  width: 20px;
+  z-index: 4;
+}
+.BorderLeft {
+  background: linear-gradient(90deg, rgb(255 255 255 / 50%) 0%, rgb(255 255 255 / 20%) 40%, rgb(255 255 255 / 0%) 100%);
+}
+.BorderRight {
+  right: 0;
+  background: linear-gradient(90deg, rgb(255 255 255 / 0%) 0%, rgb(255 255 255 / 20%) 60%, rgb(255 255 255 / 50%) 100%);
+}
+.BorderDisabled {
+  opacity: 0;
+}

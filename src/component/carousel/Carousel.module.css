@@ -1,0 +1,27 @@
+.Carousel {
+  position: relative;
+}
+
+.ScrollContainer {
+  margin-left: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-left: 0;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ItemsContainer {
+  display: table;
+  overflow-x: auto;
+  padding-left: 0;
+}
+
+.Item {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.ItemDefault {
+  padding: 4px;
+}
